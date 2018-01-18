@@ -7,11 +7,14 @@ class Car
   # car.accelerate
   def accelerate
     @speed += 1
-    puts "You are going #{@speed} miles per hour"
+    how_fast
   end
   # car.brake
   def brake
     @speed -= 1
+    how_fast
+  end
+  def how_fast
     puts "You are going #{@speed} miles per hour"
   end
 end
