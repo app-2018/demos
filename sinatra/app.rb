@@ -1,5 +1,10 @@
 require 'sinatra'
 
 get '/' do
-  'Hello World!'
+  @name = 'Ralph'
+  "Hello World from #{@name}"
+end
+
+get '/name/:name' do
+  "Hello from #{params['name'].capitalize}"
 end
